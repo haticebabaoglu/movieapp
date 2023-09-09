@@ -6,6 +6,8 @@ function App() {
     <div>
       <Navbar />
       <Moviecard />
+      <Moviecard />
+      <Moviecard />
     </div>
   );
 }

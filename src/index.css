@@ -147,3 +147,10 @@ header {
     transform: translateX(0px);
   }
 }
+/* ====================
+ */
+
+.movicard {
+  width: 15rem;
+  height: 24rem;
+}
