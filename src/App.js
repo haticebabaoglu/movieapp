@@ -1,5 +1,6 @@
 import Navbar from "./component/navbar";
 import Moviecard from "./component/moviecard";
+import Hero from "./component/hero";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Moviecard />
       <Moviecard />
       <Moviecard />
+      <Hero />
     </div>
   );
 }
