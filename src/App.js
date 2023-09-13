@@ -7,8 +7,7 @@ function App() {
     <div>
       <Navbar />
       <Moviecard />
-      <Moviecard />
-      <Moviecard />
+
       <Hero />
     </div>
   );
