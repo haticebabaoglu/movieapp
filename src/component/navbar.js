@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [navActive, setNavActive] = useState(false);
+  const [navActive, setNavActive] = useState(true);
 
   const toggleNav = () => {
     setNavActive(!navActive);
