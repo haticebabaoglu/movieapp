@@ -12,7 +12,7 @@ const Navbar = () => {
       <header>
         <nav className={`navbar ${navActive ? "nav-active" : ""}`}>
           <div className="logo">
-            <a href="/">TVDB</a>
+            <a href="/">TVDB,</a>
           </div>
           <ul className="links">
             <li>
