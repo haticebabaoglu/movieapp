@@ -7,6 +7,8 @@ function App() {
     <div>
       <Navbar />
       <Moviecard />
+
+      <Hero />
     </div>
   );
 }
