@@ -1,11 +1,7 @@
 import React from "react";
 
 const Hero = () => {
-  return (
-    <div>
-      <img src="" alt="" />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Hero;
