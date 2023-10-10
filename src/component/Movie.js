@@ -39,19 +39,23 @@ const Movie = () => {
   }
 
   return (
-    <div>
+    <div className="movie-card-container">
       {movielist.map((movie) => (
-        <div key={movie.id} className="movie">
+        <div key={movie.id} className="movie-card">
           <img
             src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
             alt={movie.title}
-            style={{ width: 350, height: 350 }}
           />
-          <h2>{movie.title}</h2>
+          <div className="movie-details">
+            <h2>{movie.title}</h2>
+            <p className="movie-description">{movie.description}</p>
+            <p className="release-date">Release Date: {movie.release_date}</p>
+          </div>
         </div>
       ))}
     </div>
   );
+  
 };
 
 export default Movie;
