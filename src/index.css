@@ -158,7 +158,7 @@ header {
 }
 
 .movie-card {
-  width: 250px;
+  width: 280px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -179,12 +179,12 @@ header {
   transition: transform 0.2s ease; 
 }
 
-.movie-card:hover img {
+/* .movie-card:hover img {
   transform: scale(1.1); 
-}
+} */
 
 .movie-card .movie-details {
-  padding: 20px;
+  padding: 15px;
 }
 
 .movie-card h2 {
