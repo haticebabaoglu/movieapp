@@ -209,3 +209,50 @@ header {
     width: 100%;
   }
 }
+
+/* HeroSection
+
+.hero-container {
+ background: url('') no-repeat center center/cover; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px; 
+} */ 
