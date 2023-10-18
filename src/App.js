@@ -1,15 +1,22 @@
+import { useEffect } from "react";
 import Navbar from "./component/navbar";
-import Moviecard from "./component/moviecard";
-import Hero from "./component/HeroSection";
-import Movie from "./component/Movie";
+import Hero from "./component/PopularSection";
+import { fetchDataFromApi } from "./utils/api";
 
 function App() {
+  useEffect(() => {
+    apiTesting();
+  }[]);
+  const apiTesting = () => {
+    fetchDataFromApi(`/movie/popular`)
+    .then((response)=> {
+      console.log(response)
+    }) 
+  }
   return (
     <div>
       <Navbar />
       <Hero />
-      <Moviecard />
-      <Movie />
     </div>
   );
 }
