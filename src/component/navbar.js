@@ -33,6 +33,7 @@ const Navbar = () => {
               <input
                 type="text"
                 className="input"
+                placeholder="Film, dizi, kişi ara..."
                 name="txt"
                 onMouseOut={(e) => {
                   e.target.value = "";
