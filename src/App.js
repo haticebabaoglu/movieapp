@@ -1,4 +1,3 @@
-
 import Navbar from "./component/navbar";
 import Movie from "./component/Movie";
 import Layout from "./component/Layout";
