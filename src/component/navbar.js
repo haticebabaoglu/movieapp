@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(true);
@@ -16,7 +17,8 @@ const Navbar = () => {
           </div>
           <ul className="links">
             <li>
-              <a href="/">Filmler</a>
+              
+              <NavLink href="/"Filmler/>
             </li>
             <li>
               <a href="/">Diziler</a>
