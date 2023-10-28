@@ -4,8 +4,7 @@ import ResultCart from "./ResultCart";
 const Add = () => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
-  const apiKey = `f7c19e2a1ebb717261ebdf4edc446677`; 
-
+  const apiKey = `f7c19e2a1ebb717261ebdf4edc446677`;
 
   function onChange(e) {
     setQuery(e.target.value);
@@ -33,7 +32,7 @@ const Add = () => {
               Milyonlarca film, TV şovu ve keşfedilecek kişi. Şimdi keşfedin.
             </h2>
           </div>
-          <div >
+          <div>
             <input
               className="input"
               type="text"
