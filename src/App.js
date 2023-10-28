@@ -11,9 +11,8 @@ function App() {
 
   
   return (
-    <div>
+    <div> <Navbar/>
       <Router>
-          <Navbar/>
             <Routes>
                 <Route index element={<Home />}></Route>
                 <Route path="movies" element={<Movie />}></Route>

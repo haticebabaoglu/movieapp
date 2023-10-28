@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(true);
@@ -17,17 +17,16 @@ const Navbar = () => {
           </div>
           <ul className="links">
             <li>
-              
-              <NavLink href="/"Filmler/>
+              <Link to="/">Filmler</Link>
             </li>
             <li>
-              <a href="/">Diziler</a>
+              <Link to="/diziler">Diziler</Link>
             </li>
             <li>
-              <a href="/">Kişiler</a>
+              <Link to="/kisiler">Kişiler</Link>
             </li>
             <li>
-              <a href="/">Daha fazla</a>
+              <Link to="/daha-fazla">Daha fazla</Link>
             </li>
           </ul>
           <div className="box">
