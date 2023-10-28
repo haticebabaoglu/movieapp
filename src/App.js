@@ -1,27 +1,28 @@
-import Navbar from "./component/Navbar";
 import Movie from "./component/Movie";
-import Layout from "./component/Layout";
 import MovieList from "./component/MovieList";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PopularSection from "./component/PopularSection";
 import Home from "./component/Home";
-
+import Person from "./component/pages/Person";
+import Movies from "./component/pages/Movies";
+import Series from "./component/pages/Series";
 
 function App() {
-
-  
   return (
-    <div> <Navbar/>
+    <div>
       <Router>
-            <Routes>
-                <Route index element={<Home />}></Route>
-                <Route path="movies" element={<Movie />}></Route>
-                <Route path="movielist" element={<MovieList />}></Route>
-                <Route path="/*" element={<h1>Error Page</h1>}></Route>
-            </Routes>
-        </Router>
-        <PopularSection /> 
-
+        <Routes>
+          <Route index element={<Home />}></Route>
+          <Route path="movies" element={<Movie />}></Route>
+          <Route path="movielist" element={<MovieList />}></Route>
+          <Route path="popularsection" element={<PopularSection />}></Route>
+          <Route path="person" element={<Person />}></Route>
+          <Route path="movies" element={<Movies />}></Route>
+          <Route path="series" element={<Series />}></Route>
+          <Route path="/*" element={<h1>Error Page</h1>}></Route>
+        </Routes>
+      </Router>
+      <PopularSection />
     </div>
   );
 }
