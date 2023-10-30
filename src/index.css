@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: transparent;
   padding: 1rem 0;
 }
 
@@ -61,8 +61,6 @@ header {
   color: #e50914;
   outline: none;
   transition: 0.5s;
-  
-  
 }
 .box:hover input {
   width: 250px;
@@ -169,8 +167,8 @@ header {
 }
 
 .movie-card:hover {
-  transform: scale(1.05); 
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .movie-card img {
@@ -178,7 +176,7 @@ header {
   height: auto;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
-  transition: transform 0.2s ease; 
+  transition: transform 0.2s ease;
 }
 
 /* .movie-card:hover img {
@@ -214,8 +212,6 @@ header {
 
 /* popular Section */
 
-
-
 .popular-section {
   background: #333;
   color: #fff;
@@ -234,17 +230,16 @@ h1 {
 }
 
 .movie-card {
-
   border-radius: 10px;
   padding: 10px;
 
-  text-align: center; 
+  text-align: center;
   width: 220px;
 }
 
 img {
   max-width: 100%;
-  height: auto; 
+  height: auto;
 }
 
 h2 {
@@ -259,22 +254,24 @@ p {
 */
 .cards {
   display: inline-block;
-  transition: transform .2s;
+  transition: transform 0.2s;
   position: relative;
   border-radius: 10px;
   overflow: hidden;
   margin: 0.19rem;
-  cursor:pointer;
-  min-width:200px;
-  height:300px;
-  z-index:0;
+  cursor: pointer;
+  min-width: 200px;
+  height: 300px;
+  z-index: 0;
   border: 1px solid rgb(99, 99, 99);
 }
 
 .cards:hover {
   transform: scale(1.2);
   z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .cards__img {
@@ -290,10 +287,10 @@ p {
   flex-direction: column;
   width: 85%;
   justify-content: flex-end;
-  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
   opacity: 0;
-  transition: opacity .2s;
-}   
+  transition: opacity 0.2s;
+}
 
 .cards__overlay:hover {
   opacity: 1;
@@ -306,7 +303,7 @@ p {
 }
 
 .card__runtime {
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-bottom: 0.25rem;
 }
 
@@ -316,6 +313,6 @@ p {
 
 .card__description {
   font-style: italic;
-  font-size: .75rem;
+  font-size: 0.75rem;
   margin-bottom: 0.25rem;
 }

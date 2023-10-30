@@ -4,7 +4,7 @@ const Movie = () => {
   const [movielist, setMovielist] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const apiKey = `f7c19e2a1ebb717261ebdf4edc446677`; 
+  const apiKey = `f7c19e2a1ebb717261ebdf4edc446677`;
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -55,7 +55,6 @@ const Movie = () => {
       ))}
     </div>
   );
-  
 };
 
 export default Movie;

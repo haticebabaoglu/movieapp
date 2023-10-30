@@ -2,15 +2,17 @@ import Movie from "./component/Movie";
 import MovieList from "./component/MovieList";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PopularSection from "./component/PopularSection";
-import Home from "./component/Home";
+import Home from "./component/pages/Home";
 import Person from "./component/pages/Person";
 import Movies from "./component/pages/Movies";
 import Series from "./component/pages/Series";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
     <div>
       <Router>
+        <Navbar />
         <Routes>
           <Route index element={<Home />}></Route>
           <Route path="movies" element={<Movie />}></Route>
