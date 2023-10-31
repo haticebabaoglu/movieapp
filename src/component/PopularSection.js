@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
+import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import style from "./Populars.css";
 
 const PopularSection = () => {
   const [popularMovies, setPopularMovies] = useState([]);
 
-  const API_KEY = '98bf490ddf45c2b763033cb54b1893e2';
+  const API_KEY = "98bf490ddf45c2b763033cb54b1893e2";
 
   useEffect(() => {
-
     fetch(
       `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
     )
@@ -19,7 +18,7 @@ const PopularSection = () => {
         setPopularMovies(data.results);
       })
       .catch((error) => {
-        console.error('Error fetching popular movies:', error);
+        console.error("Error fetching popular movies:", error);
       });
   }, []);
 

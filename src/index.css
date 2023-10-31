@@ -225,16 +225,17 @@ h1 {
 }
 
 .movie-slider {
-  display: flex;
+  max-width: 50%;
+  margin: 0 auto;
   overflow-x: auto;
 }
 
 .movie-card {
   border-radius: 10px;
   padding: 10px;
-
   text-align: center;
   width: 220px;
+  margin-right: 10px;
 }
 
 img {
@@ -250,6 +251,7 @@ h2 {
 p {
   font-size: 1rem;
 }
+
 /* =========================
 */
 .cards {
