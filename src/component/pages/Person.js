@@ -5,7 +5,7 @@ import Home from "./Home";
 const Person = () => {
   return (
     <div>
-      <NavLink to="/" elemen={<Home />}></NavLink>
+      <NavLink to="/" element={<Home />}></NavLink>
     </div>
   );
 };
