@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.movie {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie h1 {
+  margin-bottom: 10px;
+}
+
+.movie p {
+  margin-bottom: 20px;
+}

@@ -1,60 +1,39 @@
 import React, { useState } from "react";
-import ResultCart from "./ResultCart";
+import axios from "axios";
 
-const Add = () => {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
-  const apiKey = `f7c19e2a1ebb717261ebdf4edc446677`;
+const SearchBar = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
-  function onChange(e) {
-    setQuery(e.target.value);
+  const searchMovies = async (e) => {
+    e.preventDefault();
+    const response = await axios.get(
+      `https://api.themoviedb.org/3/search/movie?api_key=98bf490ddf45c2b763033cb54b1893e2=${inputValue}`
+    );
+    setSearchResults(response.data.results);
+  };
 
-    fetch(`
-    https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&page=1&include_adult=false&query=${e.target.value}`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (!data.errors) {
-          setResults(data.results);
-        } else {
-          setResults([]);
-        }
-      });
-  }
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
 
   return (
-    <div className="add-page">
-      <div className="container">
-        <div className="add-content">
-          <img src="https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/9ZyAUZrfccsjtDwYgc7yvOBnqM9.jpg" />
-          <div className="titles">
-            <h1>Hoş Geldiniz.</h1>
-            <h2>
-              Milyonlarca film, TV şovu ve keşfedilecek kişi. Şimdi keşfedin.
-            </h2>
-          </div>
-          <div>
-            <input
-              className="input"
-              type="text"
-              value={query}
-              onChange={onChange}
-              placeholder="Film, dizi, kişi ara..."
-            />
-          </div>
-
-          {results.length > 0 && (
-            <ul className="results">
-              {results.map((movie) => (
-                <li key={movie.id}>
-                  <ResultCart movie={movie} />
-                </li>
-              ))}
-            </ul>
-          )}
+    <div>
+      <form onSubmit={searchMovies}>
+        <input type="text" value={inputValue} onChange={handleInputChange} />
+        <button type="submit">Search</button>
+      </form>
+      {searchResults.map((movie) => (
+        <div key={movie.id}>
+          <h2>{movie.title}</h2>
+          <img
+            src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+            alt={movie.title}
+          />
         </div>
-      </div>
+      ))}
     </div>
   );
 };
 
-export default Add;
+export default SearchBar;
