@@ -1,12 +1,6 @@
 import Movie from "./component/Movie";
 import MovieList from "./component/MovieList";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import PopularSection from "./component/PopularSection";
 import Home from "./component/pages/Home";
 import Person from "./component/pages/Person";
@@ -16,27 +10,24 @@ import Navbar from "./component/Navbar";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <NavLink to="/home">Ana Sayfa</NavLink>
       <NavLink to="/movies">Filmler</NavLink>
       <NavLink to="/series">Diziler</NavLink>
-      <BrowserRouter>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="movies" element={<Movie />} />
-            <Route path="movielist" element={<MovieList />} />
-            <Route path="popularsection" element={<PopularSection />} />
-            <Route path="person" element={<Person />} />
-            <Route path="movies" element={<Movies />} />
-            <Route path="series" element={<Series />} />
-            <Route path="/*" element={<h1>Error Page</h1>} />
-          </Routes>
-        </Router>
-        <PopularSection />
-      </BrowserRouter>
-    </>
+      <Navbar />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="movies" element={<Movie />} />
+        <Route path="movielist" element={<MovieList />} />
+        <Route path="popularsection" element={<PopularSection />} />
+        <Route path="person" element={<Person />} />
+        <Route path="movies" element={<Movies />} />
+        <Route path="series" element={<Series />} />
+        <Route path="/*" element={<h1>Error Page</h1>} />
+      </Routes>
+      <PopularSection />
+    </BrowserRouter>
   );
 }
+
 export default App;
