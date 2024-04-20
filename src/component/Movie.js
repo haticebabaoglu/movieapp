@@ -49,7 +49,7 @@ const Movie = () => {
           <div className="movie-details">
             <h2>{movie.title}</h2>
             <p className="movie-description">{movie.description}</p>
-            <p className="release-date">Release  Date: {movie.release_date}</p>
+            <p className="release-date">Release Date: {movie.release_date}</p>
           </div>
         </div>
       ))}
