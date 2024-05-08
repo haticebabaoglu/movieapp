@@ -20,7 +20,7 @@ function App() {
         <Route path="movies" element={<Movie />} />
         <Route path="movielist" element={<MovieList />} />
         <Route path="popularsection" element={<PopularSection />} />
-        <Route path="person" element={<Person />} />
+        <Route path="per son" element={<Person />} />
         <Route path="movies" element={<Movies />} />
         <Route path="series" element={<Series />} />
         <Route path="/*" element={<h1>Error Page</h1>} />
