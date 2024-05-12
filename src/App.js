@@ -7,7 +7,7 @@ import Person from "./component/pages/Person";
 import Movies from "./component/pages/Movies";
 import Series from "./component/pages/Series";
 import Navbar from "./component/Navbar";
-
+    
 function App() {
   return (
     <BrowserRouter>
