@@ -13,7 +13,7 @@ h1 {
 .movie-slider {
   max-width: 50%;
   margin: 0 auto;
-  overflow-x: auto;  
+  overflow-x: auto; 
 }
 
 .movie-card {
