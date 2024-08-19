@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <NavLink to="/home">Ana Sayfa</NavLink>
       <NavLink to="/movies">Filmler</NavLink>
-      <NavLink to="/series">Diziler</NavLink>
+      <NavLink to="/series">Diziler </NavLink>
       <Navbar />
       <Routes>
         <Route index element={<Home />} />

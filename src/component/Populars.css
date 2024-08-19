@@ -12,7 +12,7 @@ h1 {
 
 .movie-slider {
   max-width: 50%;
-  margin:  auto;
+  margin: 0 auto;
   overflow-x: auto; 
 }
 
